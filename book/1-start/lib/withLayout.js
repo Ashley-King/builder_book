@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MuiThemeProvider } from '@material-ui/core/styles';
@@ -7,8 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import getContext from './context';
 import Header from '../components/Header';
 
-
 function withLayout(BaseComponent) {
+    
     class App extends React.Component {
         constructor(props) {
             super(props);
