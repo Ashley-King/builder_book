@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import Header from '../components/Header';
+import Button from '@material-ui/core/Button';
+import withLayout from '../lib/withLayout';
 
 const Index = () => (
   <div style={{ padding: '10px 45px' }}>
-      <Head>
+    <Head>
       <title>Index Page</title>
-          <meta name='description' content='This is the index page description' />
+      <meta name="description" content="This is the index page description" />
     </Head>
-      <Header />
     <p>Content on Index page</p>
+    <Button>MUI button</Button>
   </div>
 );
 
-export default Index;
+export default withLayout(Index);
