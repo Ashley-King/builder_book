@@ -46,6 +46,13 @@ function withLayout(BaseComponent) {
 
     App.defaultProps = {
         pageContext: null,
+    };
+
+    App.getInitialProps = (ctx) => {
+        if (BaseComponent.getInitialProps) {
+            return BaseComponent.getInitialProps(ctx);
+        }
+        return {};
     }
 
     return App;
